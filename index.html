@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scroll and Continue</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background:blue ;
+        }
+
+        .container {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .scroll-button {
+            margin-bottom: 20px;
+        }
+
+        .continue-button {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .continue-button:hover {
+            background-color: #0056b3;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>FREE PAID APPS</h1>
+        <p>Scroll down to continue</p>
+        <button class="scroll-button" onclick="scrollToContent()">Scroll Down</button>
+    </div>
+
+    <script>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        function scrollToContent() {
+            const content = document.getElementById('content');
+            content.scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+
+    <div id="content"></div>
+
+    <div class="container">
+        <button class="continue-button" onclick="location.href='matter.html'">Continue</button>
+    </div>
+</body>
+</html>
